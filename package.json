@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "\"testing\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kykim102/testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kykim102/testing/issues"
+  },
+  "homepage": "https://github.com/kykim102/testing#readme",
+  "devDependencies": {
+    "mocha": "^8.1.1"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
+}
