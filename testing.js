@@ -1,6 +1,13 @@
-var http = require('http');
+const express = require('express');
 
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World!');
-}).listen(8080);
+const app = express();
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log("listening on " + PORT);
+});
+
+app.get('/', (req, res) => {
+  res.send({ ok: true });
+})
